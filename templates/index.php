@@ -56,24 +56,6 @@
 				<?php
 					$publication_url = get_post_meta( get_the_ID(), '_csanr_publication_url', true );
 					$publication_external = get_post_meta( get_the_ID(), '_csanr_publication_external', true );
-					/*$temp = get_post_meta( get_the_ID(), '_pub', true );
-					$publication_url = $temp['url'];
-					$publication_year = $temp['year'];
-					$publication_featured = $temp['featured'];
-					$publication_external = $temp['external'];
-					if ( $publication_url ) {
-						add_post_meta( get_the_ID(), '_csanr_publication_url', $publication_url );
-					}
-					if ( $publication_year ) {
-						add_post_meta( get_the_ID(), '_csanr_publication_year', $publication_year );
-					}
-					if ( $publication_featured ) {
-						add_post_meta( get_the_ID(), '_csanr_publication_featured', 1 );
-					}
-					if ( $publication_external ) {
-						add_post_meta( get_the_ID(), '_csanr_publication_external', 1 );
-					}
-					delete_post_meta( get_the_ID(), '_pub' );*/
 				?>
 
 				<h2>
