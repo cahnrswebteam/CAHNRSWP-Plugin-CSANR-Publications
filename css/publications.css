@@ -1,0 +1,58 @@
+.publications.pager {
+	text-align: center;
+}
+.pager,
+.pager .column.one {
+	position: relative;
+}
+.pager .prev {
+	left: 1rem;
+	position: absolute;
+}
+.pager .next {
+	position: absolute;
+	right: 1rem;
+}
+.pager .column.one .prev {
+	left: 3rem;
+}
+.pager .column.one .next {
+	right: 3rem;
+}
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+.page-numbers:not(.prev):not(.next):not(.dots) {
+	border: 1px solid #d7dadb;
+	padding: 0.25rem 0.5rem;
+	transition: background 0.5s ease, color 0.5s ease;
+}
+.page-numbers:not(.prev):not(.next):not(.dots):not(.current):hover {
+	background: #981e32;
+	color: #fff;
+}
+.page-numbers.dots {
+	padding: 0 0.5rem;
+}
+.page-numbers.current {
+	background: #5e6a71;
+	color: #fff;
+}
+.archive-footer {
+	padding-bottom: 2rem;
+}
+.external-publication:after {
+	content: '\21AA';
+	font-family: Spine-Icons;
+	font-size: 0.9rem;
+	line-height: 1em;
+	margin-left: 7px;
+	position: absolute;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

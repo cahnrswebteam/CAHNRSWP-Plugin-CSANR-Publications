@@ -1,0 +1,30 @@
+.cahnrs-accordion {
+	margin: 0 0 0 -2rem;
+	/*padding: 0 1rem 0 0;*/
+}
+.cahnrs-accordion:nth-of-type(even) {
+	background: #fff;
+}
+.cahnrs-accordion dt {
+	padding: 0.5rem 1rem 0.5rem 0;
+}
+.cahnrs-accordion dt h3,
+.all-publications {
+	font-size: 1rem;
+}
+.cahnrs-accordion dd {
+	/*padding: 1rem 0 1rem 2rem;*/
+	padding: 0 0 1rem 2rem;
+}
+.cahnrs-accordion dd ul {
+	column-count: 3;
+	list-style: none;
+	padding: 0;
+}
+.all-publications {
+	padding: 0.5rem 1rem 0.5rem 0;
+}
+.cahnrs-search {
+	margin-top: 0.5rem;
+	width: 14em;
+}

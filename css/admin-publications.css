@@ -1,0 +1,20 @@
+/*.column-year {
+	width: 2.25em;
+}*/
+.column-featured {
+	width: 6.75em;
+}
+.column-external {
+	width: 4.3em;
+}
+@media screen and (max-width:782px) {
+	/*.column-year,*/
+	.column-taxonomy-publication-authors,
+	.column-taxonomy-publication-program-areas,
+	.column-taxonomy-publication-topics,
+	.column-taxonomy-keywords,
+	.column-featured,
+	.column-external {
+		display: none;
+	}
+}

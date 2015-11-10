@@ -1,0 +1,18 @@
+.csanr-publications h3 {
+	font-size: 1em;
+	line-height: 1.4em;
+}
+.external-publication:after {
+	content: '\21AA';
+	font-family: Spine-Icons;
+	font-size: 0.9rem;
+	line-height: 1em;
+	margin-left: 7px;
+	position: absolute;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.csanr-publications p {
+	padding-bottom: 0;
+}
