@@ -632,7 +632,7 @@ class CAHNRSWP_CSANR_Publications {
 			),
 		);
 		$featured_publications = new WP_Query( array_merge( $query_base, $features_query ) );
-		$additional_publications = new WP_Query( array_merge( $query_base, $additional_query )  );
+		$additional_publications = new WP_Query( array_merge( $query_base, $additional_query ) );
 		ob_start();
 		if ( $featured_publications->have_posts() ) :
 			?><h2>Featured<?php echo ' ' . $title; ?> Publications</h2><?php
@@ -668,6 +668,7 @@ class CAHNRSWP_CSANR_Publications {
 			endwhile;
 			?></ul><?php
 		endif;
+		wp_reset_postdata();
 		$html = ob_get_contents();
 		ob_end_clean();
 		return $html;
