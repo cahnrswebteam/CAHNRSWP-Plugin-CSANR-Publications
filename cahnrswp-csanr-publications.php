@@ -289,7 +289,6 @@ class CAHNRSWP_CSANR_Publications {
 	public function publications_columns( $columns ) {
 		return array(
 			'cb' => '<input type="checkbox" />',
-			//'year' => __( 'Year' ),
 			'title' => __( 'Title' ),
 			'taxonomy-publication-authors' => __( 'Authors' ),
 			'taxonomy-publication-program-areas' => __( 'Programs' ),
@@ -308,15 +307,9 @@ class CAHNRSWP_CSANR_Publications {
 	 * @param int $post_id The ID of the current post.
 	 */
 	public function publication_columns_data( $column_name, $post_id ) {
-		$publication_year = get_post_meta( get_the_ID(), '_csanr_publication_year', true );
 		$publication_featured = get_post_meta( get_the_ID(), '_csanr_publication_featured', true );
 		$publication_external = get_post_meta( get_the_ID(), '_csanr_publication_external', true );
 		switch( $column_name ) {
-			/*case 'year' :
-				if ( $publication_year ) {
-					echo esc_html( $publication_year );
-				}
-				break;*/
 			case 'featured' :
 				if ( $publication_featured ) {
 					echo 'Yes';
@@ -386,7 +379,6 @@ class CAHNRSWP_CSANR_Publications {
 		$publication_url = get_post_meta( $post->ID, '_csanr_publication_url', true );
 		$feature = get_post_meta( $post->ID, '_csanr_publication_featured', true );
 		$external = get_post_meta( $post->ID, '_csanr_publication_external', true );
-		print_r(get_post_meta( $post->ID));
 		?>
 		<p>
 			<label for="csanr-publication-url">Web Address</label>
